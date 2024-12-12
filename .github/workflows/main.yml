@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Sync Markdown to BookStack
-        uses: lazybytez/sync-markdown-bookstack-action@1.0.0
+        uses: lazybytez/sync-markdown-bookstack-action
         with:
             bookstack-url: 'http://165.22.108.73:6875'
             bookstack-token-id: 'H8OLfA9AF4W04mAcEEYUCShaVb4uwYrK'
