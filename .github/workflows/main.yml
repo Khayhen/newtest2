@@ -1,0 +1,11 @@
+uses: lazybytez/sync-markdown-bookstack-action@1.0.0
+with:
+    bookstack-url: 'https://bookstack.your.url'
+    bookstack-token-id: '{{ secrets.BOOKSTACK_TOKEN_ID }}'
+    bookstack-token-secret: '{{ secrets.BOOKSTACK_TOKEN_SECRET }}'
+    # You only need one of book-id or chapter-id
+    book-id: 123
+    chapter-id: 123
+    # You can either use a path to a file or a glob pattern:
+    path: 'sub/directories/README.md'
+    path: 'sub/*/*.md'
