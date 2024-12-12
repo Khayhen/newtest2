@@ -1,11 +1,25 @@
-uses: lazybytez/sync-markdown-bookstack-action@1.0.0
-with:
-    bookstack-url: 'http://165.22.108.73:6875'
-    bookstack-token-id: 'H8OLfA9AF4W04mAcEEYUCShaVb4uwYrK'
-    bookstack-token-secret: 'aCXMrhugrJQHvZY5p46ORSQW85iID9Ac'
-    # You only need one of book-id or chapter-id
-    book-id: '1#bkmrk-page-title'
-    #chapter-id: 123
-    # You can either use a path to a file or a glob pattern:
-    # path: 'sub/directories/README.md'
-    path: 'sub/*.md'
+name: Sync Markdown to BookStack
+
+on:
+  push:
+    paths:
+      - 'sub/**/*.md' # Trigger only when Markdown files in the specified directory are pushed
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  sync-markdown:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync Markdown to BookStack
+        uses: lazybytez/sync-markdown-bookstack-action@1.0.0
+        with:
+            bookstack-url: 'http://165.22.108.73:6875'
+            bookstack-token-id: 'H8OLfA9AF4W04mAcEEYUCShaVb4uwYrK'
+            bookstack-token-secret: 'aCXMrhugrJQHvZY5p46ORSQW85iID9Ac'
+            # You only need one of book-id or chapter-id
+            book-id: '1#bkmrk-page-title'
+            #chapter-id: 123
+            # You can either use a path to a file or a glob pattern:
+            # path: 'sub/directories/README.md'
+            path: '**/*.md'
