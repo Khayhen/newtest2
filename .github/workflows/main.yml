@@ -18,7 +18,7 @@ jobs:
             token-id: 'H8OLfA9AF4W04mAcEEYUCShaVb4uwYrK'
             token-secret: 'aCXMrhugrJQHvZY5p46ORSQW85iID9Ac'
             # You only need one of book-id or chapter-id
-            book-id: '1#bkmrk-page-title'
+            book-id: '1#bkmrk'
             #chapter-id: 123
             # You can either use a path to a file or a glob pattern:
             # path: 'sub/directories/README.md'
