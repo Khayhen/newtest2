@@ -22,4 +22,4 @@ jobs:
             #chapter-id: 123
             # You can either use a path to a file or a glob pattern:
             # path: 'sub/directories/README.md'
-            path: 'sub/**/*.md'
+            path: 'test2/*.md'
