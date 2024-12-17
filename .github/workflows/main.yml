@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Sync Markdown to BookStack
-        uses: lazybytez/sync-markdown-bookstack-action@v1.0.0
+        uses: Khayhen/Markdown-to-BookStack-Action@1.0.0
         with:
             url: 'https://docs.antlysis.com'
             token-id: 'H8OLfA9AF4W04mAcEEYUCShaVb4uwYrK'
